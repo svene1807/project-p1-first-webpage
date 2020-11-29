@@ -48,9 +48,10 @@ h1 {
 
 h2 {
     font-family:'Raleway', sans-serif;
+    padding-left: 30px;
 }
 
-.main-block {
+main {
     border: 2px dotted lightcoral;
     padding: 10px;
     margin-bottom: 20px;
@@ -65,11 +66,25 @@ h2 {
     box-shadow: 0px 0px 10px 1px whitesmoke;
 }
 
+form {
+  background-color: #c8a3a3;
+  display: block;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px whitesmoke;
+}
+
+.video {
+  width: 560px;
+  height: 315px;
+}
+
 .note {
     font-style: italic;
 }
 
-a{
+a {
     color: inherit;
 }
 
@@ -80,4 +95,55 @@ a:hover {
 .video {
     display: block;
     margin: 60px;
+}
+
+
+.product-grid{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card{
+  width: 90%;
+  margin: 5px;
+  padding: 5%;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .product-grid{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-card{
+    background-color: gray;
+    width: 20%;
+  }
+}
+
+.product-name{
+  background-color: lightGray;
+  color: black;
+}
+
+.product-image{
+  height: 120px;
+  width: 100px;
+}
+
+.product-description{
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.selection {
+  padding-left: 20px;
+  margin: 15px;
+  display: block;
 }
